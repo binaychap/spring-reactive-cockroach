@@ -20,5 +20,51 @@ docker container start <name>
 ### UI 
 http://localhost:8080
 
+### CRUD API
+```agsl
+POST http://localhost:9191/api/account
+
+body json
+{
+   
+    "type": "checking",
+    "name": "Binay",
+    "balance":1224.9
+}
+
+```
+
+```agsl
+GET http://localhost:9191/api/account
+
+response
+[
+    {
+        "id": 906376423640006657,
+        "name": "Ujjalo",
+        "type": "Saving",
+        "balance": 1.20
+    },
+    {
+        "id": 906376738361081857,
+        "name": "normal",
+        "type": "checking",
+        "balance": 100.90
+    },
+    {
+        "id": 906376778665623553,
+        "name": "Hari",
+        "type": "checking",
+        "balance": 33.90
+    },
+    {
+        "id": 906376802475704321,
+        "name": "Binay",
+        "type": "checking",
+        "balance": 1224.90
+    }
+]
+```
+
 
 
